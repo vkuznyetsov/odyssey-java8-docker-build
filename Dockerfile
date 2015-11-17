@@ -23,8 +23,8 @@ RUN export NVM_DIR=/home/user/.nvm
 ENV HOME /home/user/
 RUN cd /home/user/.nvm && sudo chmod a+x install.sh && sleep 1 && ./install.sh && \
 echo "[[ -s /home/user/.nvm/nvm.sh ]] && . /home/user/.nvm/nvm.sh" >> /home/user/.bashrc && . /home/user/.nvm/nvm.sh && \
-      nvm install 0.10.31
-RUN sudo npm install -g npm@1.4.23
+      nvm install 4.2.1
+RUN sudo npm install -g npm@2.14.7
 RUN sudo npm install --global gulp@3.8.7
 RUN sudo gem install jekyll -v 2.3.0
 RUN mkdir /home/user/app
